@@ -1,0 +1,119 @@
+    /* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Градиентный фон */
+body {
+    background: linear-gradient(45deg, black, #FF0000, #FF69B4, #FFD700, #0000FF, #008000);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease infinite;
+    color: white;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+@keyframes gradientAnimation {
+    0% {background-position: 0 0;}
+    50% {background-position: 100% 100%;}
+    100% {background-position: 0 0;}
+}
+
+/* Логотип и приветствие */
+header {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.logo img {
+    width: 60%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: white;
+    background: -webkit-linear-gradient(45deg, #FF0000, #FF69B4, #FFD700, #0000FF, #008000);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.highlight {
+    color: #FFD700; /* Золотой цвет для выделения */
+}
+
+/* Навигация */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 3rem;
+}
+
+.nav-button {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Стиль для секций с обводкой */
+.section-with-border {
+    margin-bottom: 3rem;
+    padding: 40px;
+    border: 2px solid black;
+    background: linear-gradient(45deg, black, #FF0000, #FF69B4, #FFD700, #0000FF, #008000);
+}
+
+.about-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+/* Игры */
+.games-list {
+    margin-top: 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.answer {
+    margin-top: 10px;
+}
+
+/* Блоки с железом */
+.hardware-item {
+    margin-bottom: 20px;
+}
+
+.hardware-item h3 {
+    margin: 10px 0;
+}
+.links{
+    margin-top: 30px;
+    display: flex;
+    gap: 60px;
+}
+ul{
+    list-style: none;
+}
+
